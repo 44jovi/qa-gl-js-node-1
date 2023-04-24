@@ -29,3 +29,8 @@ async function getSnorlax() {
 }
 
 getSnorlax();
+
+// Alternative method
+// axios.get(url).then(({ data }) => {
+//   console.log("Fav:", data);
+// });
