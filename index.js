@@ -12,3 +12,20 @@ console.log(multiply(1, 2));
 console.log(divide(1, 2));
 
 console.log(calc.add(10, 20));
+
+// Pokemon API example
+
+const url = "https://pokeapi.co/api/v2/pokemon/snorlax";
+
+axios.get(url).then((resp) => {
+  console.log(resp.data);
+});
+
+// async/await version
+async function getSnorlax() {
+  const res = await axios.get(url);
+  const data = res.data;
+  console.log(data);
+}
+
+getSnorlax();
