@@ -2,6 +2,8 @@ const calc = require("./calc.js");
 // OR
 const { add, subtract, divide, multiply } = require("./calc");
 
+const axios = require("axios");
+
 console.log("Howdy, world!");
 
 console.log(add(1, 2));
